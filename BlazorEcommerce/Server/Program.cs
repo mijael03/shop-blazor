@@ -19,7 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer("Server=lab13database.mssql.somee.com;Database=lab13database;User Id=mijael19_SQLLogin_1;Password=c1mxefy5xm;");
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
